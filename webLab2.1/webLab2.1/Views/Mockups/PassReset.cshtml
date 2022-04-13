@@ -1,0 +1,17 @@
+﻿@using webLab2._1.Models
+@model Data
+@{ ViewData["Title"] = "Reset Your Password"; }
+<h1 style="font-size:35px;">Reset Your Password</h1>
+
+<div>
+    <form method="post">
+        <b>Email</b><br />
+        @Html.EditorFor(p => p.Email, new { style = "width:300px" })  @Html.ValidationMessageFor(p => p.Email)<br>
+        <input type="submit" value="Send me a code" name="action">
+        <input type="submit" value="I have a code" name="action">
+
+        <h2>@ViewBag.Code</h2>
+
+
+    </form>
+</div>

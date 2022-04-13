@@ -1,0 +1,22 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+<header>
+    <h2>Backend1</h2>
+    <nav><a asp-controller="Home" asp-action="Index">Home</a></nav>
+    <nav><a asp-controller="Home" asp-action="Index">Mockups</a></nav>
+    <nav><a asp-controller="ControlsService" asp-action="Menu">Controls</a></nav>    
+</header>
+<main>
+    @RenderBody()
+</main>
+<footer>
+    <hr/>
+    © 2022 - Backend
+</footer>
+</body>
+</html>

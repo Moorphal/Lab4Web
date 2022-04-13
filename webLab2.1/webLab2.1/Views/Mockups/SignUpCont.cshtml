@@ -1,0 +1,16 @@
+﻿@using webLab2._1.Models
+@model Data
+@{ ViewData["Title"] = "SignUp"; }
+<div>
+    <h1 style="font-size:35px; ">Sign Up</h1>
+</div>
+<form method="post">
+    <b>Email </b><br>
+    <div style="margin-top:10px">@Html.EditorFor(p => p.Email) @Html.ValidationMessageFor(p => p.Email)</div><br>
+    <b style="margin-top:10px">Password </b><br>
+    <div style="margin-top:10px"> @Html.PasswordFor(p => p.Password) @Html.ValidationMessageFor(p => p.Password)</div><br>
+    <b style="margin-top:10px">Comfirm password </b><br>
+    <div style="margin-top:10px"> @Html.PasswordFor(p => p.ComparePassword) @Html.ValidationMessageFor(p => p.ComparePassword)</div><br>
+    <input type="checkbox" name="Remember" value="true" /><label> Remember?</label><br />
+    <input type="submit" value="Continue Sign Up" >
+</form>

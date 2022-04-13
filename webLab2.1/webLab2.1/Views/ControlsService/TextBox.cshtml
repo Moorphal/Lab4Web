@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "TextBox";
+
+}
+<div class="text-left">
+    <h1 style="font-size:35px; color:#333333">Text Box</h1>
+</div>
+<form method="post">
+    <p>
+        <b>Text</b><br />
+        @Html.TextBox("State", "", new { style ="width:300px" })
+    </p>
+    <input type="submit" value="Submit" class="btn btn-light pt-1 pb-1 pl-2 pr-2" style="border-color:lightgrey; ">
+</form>

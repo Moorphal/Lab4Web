@@ -1,0 +1,13 @@
+﻿@using webLab2._1.Models
+@model Data
+@{
+    ViewData["Title"] = "Reset Your Password";
+}
+<div>
+    <h1>Reset Your Password</h1>
+</div>
+<form method="post">
+      <b>Code</b><br>
+      @Html.TextBox("Value", "", new { style = "width:300px" }) @ViewBag.Check<br>   
+<input type="submit" name="verify" value="Verify">
+</form>
